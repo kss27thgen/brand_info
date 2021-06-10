@@ -1,0 +1,262 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: underline;
+	color: #000;
+}
+
+/* Header */
+
+.headerImage {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 20rem;
+	background: url("../image/image9.jpeg") no-repeat;
+	background-size: cover;
+	background-position-y: top;
+	text-align: center;
+}
+
+.headerImageText {
+	margin-top: auto;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	color: #fff;
+	text-shadow: 1px 1px 3px #000;
+}
+
+/* Main */
+main {
+	padding: 2.5rem 1.5rem;
+}
+
+main.index {
+	background-color: #eee;
+}
+
+main.details {
+	background-color: #fff;
+	min-height: 50vh;
+}
+
+main h1 {
+	margin-bottom: 2.5rem;
+}
+
+.breadCrumb {
+	background-color: #eee;
+	padding: 1rem;
+}
+
+/* Main of index */
+.locationList {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.locationItem {
+	flex-basis: 50%;
+	padding: 1rem;
+}
+
+.locationCard {
+	background-color: #fff;
+	border: 1px solid #888;
+	border-radius: 4px;
+	padding: 1rem;
+}
+
+.locationCard h2 {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.locationCard dl {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0.5rem;
+}
+
+.locationCard dt {
+	margin-right: auto;
+}
+
+.locationCard dd {
+	margin-left: 1rem;
+}
+
+.locationCardLinks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+}
+
+@media (max-width: 700px) {
+	.locationItem {
+		flex-basis: 100%;
+	}
+}
+
+/* Main of details */
+.info {
+	display: flex;
+	flex-wrap: wrap;
+}
+.dlName {
+	font-size: 1.25rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.dlPhone {
+	display: flex;
+	align-items: center;
+}
+
+.dlPhone a {
+	text-decoration: none;
+	font-size: 1.25rem;
+	margin-left: 1rem;
+}
+
+.infoLeft {
+	padding: 1rem;
+	flex-basis: 50%;
+}
+.infoRight {
+	flex-basis: 50%;
+	padding: 1rem;
+}
+
+.infoLeft .address {
+	font-weight: bold;
+}
+.hoursList {
+	display: flex;
+	flex-wrap: wrap;
+}
+.hoursList.today {
+	font-weight: bold;
+}
+.hoursList dt {
+	margin-right: auto;
+}
+.hoursList dd {
+	margin-left: 1rem;
+}
+
+.orderButton {
+	display: inline-block;
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	border: 1px solid #555;
+	text-decoration: none;
+}
+
+.menu {
+	margin-top: 2.5rem;
+}
+
+.menu ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menuItem {
+	flex-basis: 30%;
+	margin-bottom: 2.5rem;
+	margin-right: auto;
+}
+
+.menuImage {
+	width: 100%;
+	height: 20rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.menuImage1 {
+	background-image: url("../image/item1.jpeg");
+}
+.menuImage2 {
+	background-image: url("../image/item2.jpeg");
+}
+.menuImage3 {
+	background-image: url("../image/item3.jpeg");
+}
+
+@media (max-width: 700px) {
+	.infoLeft {
+		flex-basis: 100%;
+	}
+	.infoRight {
+		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+	.menuItem {
+		flex-basis: 45%;
+	}
+}
+
+/* Footer */
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2.5rem;
+	font-size: 1.25rem;
+	border-top: 1px solid #999;
+}
+
+.footerLogo {
+	flex-basis: 20%;
+	text-align: center;
+}
+
+.footerLogo img {
+	width: 5rem;
+	height: 5rem;
+}
+
+.footerLinks {
+	flex-basis: 40%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.footerLinks li {
+	flex-basis: 50%;
+}
+
+.footerContact {
+	flex-basis: 40%;
+	text-align: center;
+}
+.footerContact p {
+	margin-top: 1.5rem;
+	font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+	.footerLogo {
+		flex-basis: 100%;
+	}
+	.footerLinks {
+		flex-basis: 100%;
+		margin: 2.5rem;
+	}
+	.footerContact {
+		flex-basis: 100%;
+	}
+}
