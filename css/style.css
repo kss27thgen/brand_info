@@ -122,10 +122,18 @@ main h1 {
 	align-items: center;
 }
 
+.iconTel {
+	width: 15px;
+	height: 15px;
+}
+
+.dlPhone dd {
+	margin-left: 1rem;
+}
+
 .dlPhone a {
 	text-decoration: none;
 	font-size: 1.25rem;
-	margin-left: 1rem;
 }
 
 .infoLeft {
